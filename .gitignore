@@ -1,0 +1,17 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Temporary directories and scratch
+.tmp/
+*.tmp
+*.log
+
+# C build intermediates
+c/src/*.o
+*.o
+*.a
+c/bin/*.com.com
+c/bin/bionpc_bench_gcc

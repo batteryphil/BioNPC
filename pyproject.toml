@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bionpc"
+version = "0.2.0"
+description = "Biological Foundation Models for Game AI — Drosophila Connectome CTRNN with Fil-C Cosmopolitan Native Engine"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "batteryphil"}
+]
+keywords = ["game-ai", "npc", "ctrnn", "connectome", "drosophila", "pytorch", "cosmopolitan", "fil-c"]
+dependencies = [
+    "torch>=2.0.0",
+    "numpy>=1.22.0",
+]
+
+[project.optional-dependencies]
+sim = ["matplotlib>=3.5.0", "pandas>=1.4.0"]
+server = ["fastapi>=0.100.0", "uvicorn>=0.22.0", "pydantic>=2.0.0", "requests>=2.28.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
